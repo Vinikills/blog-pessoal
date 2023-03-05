@@ -31,11 +31,16 @@ function Navbar() {
                   <MenuIcon />
                 </IconButton>
                 <Menu {...bindMenu(popupState)}>
+                  <Link to ='./home'>
                   <MenuItem onClick={popupState.close}>Home</MenuItem>
+                  </Link>
+                  
                   <MenuItem onClick={popupState.close}>Postagens</MenuItem>
                   <MenuItem onClick={popupState.close}>Temas</MenuItem>
                   <MenuItem onClick={popupState.close}>Cadastrar Temas</MenuItem>
+                  <Link to ='./login'>
                   <MenuItem onClick={popupState.close}>Logout</MenuItem>
+                  </Link>
                 </Menu>
               </React.Fragment>
             )}
@@ -43,6 +48,7 @@ function Navbar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Blog Pessoal
           </Typography>
+          
           <Link to='./login'  className='text-decorator-none'>
             <Button color="inherit">Login</Button>
           </Link>
