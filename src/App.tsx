@@ -7,6 +7,8 @@ import Login from './paginas/login/Login';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 
 import './App.css';
+import ListaTema from './components/temas/listaTema/ListaTema';
+import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
 
 function App() {
   return(
@@ -17,6 +19,8 @@ function App() {
     <Route path="/home" element={<Home />} />
     <Route path="/login" element={<Login />} />
     <Route path="/cadastrousuario" element={<CadastroUsuario />} />
+    <Route path="/temas" element={<ListaTema />} />
+    <Route path="/postagens" element={<ListaPostagem />} />
     </Routes>
     </div>
     <Footer />
