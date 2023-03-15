@@ -61,10 +61,16 @@ function Navbar() {
                 <Link to ='./home'>
                 <MenuItem onClick={popupState.close}>Home</MenuItem>
                 </Link>
-                
+                <Link to ='./posts'>
                 <MenuItem onClick={popupState.close}>Postagens</MenuItem>
+                </Link>
+                <Link to ='./temas'>
                 <MenuItem onClick={popupState.close}>Temas</MenuItem>
+                </Link>
+                <Link to ='./formularioTema'>
                 <MenuItem onClick={popupState.close}>Cadastrar Temas</MenuItem>
+                </Link>
+                
                 
               </Menu>
             </React.Fragment>
